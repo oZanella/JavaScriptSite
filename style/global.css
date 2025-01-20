@@ -1,0 +1,10 @@
+:root {
+    --color-primary:rgba(0, 0, 0, 0.1);
+    --color-font-primary: #331F19;
+    --color-background: #60041A;
+    --color-background-neutral: #331F19;
+    --color-font-button: #F4F0EA;
+    --color-background-hover: #A34743;
+    --color-border-primary:  #CBBBA7;
+    --color-border-sec: #8B7D70;
+}
