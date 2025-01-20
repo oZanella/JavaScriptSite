@@ -10,12 +10,13 @@
 
 <body>
     <div class="container">
-        <h1>Boas vindas!</h1>
-        <p>Vamos personalizar sua saudação usando JavaScript!</p>
-        <div class="saudacao" id="mensagemSaudacao">Olá, NOME_USER!</div>
-        <button onclick="changeName()">
-            Personalizar saudação
-        </button>
+      <h1>Lista de Tarefas</h1>
+      <p>Adicione suas tarefas!</p>
+      <input type="text" name="task" id="inputTask">
+      <button onclick="addTask()">Adicionar Tarefa</button>
+      <p id="mensagem"></p>
+      <ul id="listTask"> 
+      </ul>
     </div>
 
     <script src="JS/script.js"></script>
