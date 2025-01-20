@@ -9,12 +9,17 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <h1>Boas vindas!</h1>
         <p>Vamos personalizar sua saudação usando JavaScript!</p>
-        <div>Olá, visitante!</div>
-        <script src="JS/script.js"></script>
+        <div class="saudacao" id="mensagemSaudacao">Olá, NOME_USER!</div>
+        <button onclick="changeName()">
+            Personalizar saudação
+        </button>
     </div>
+
+    <script src="JS/script.js"></script>
+
 </body>
 
 </html>

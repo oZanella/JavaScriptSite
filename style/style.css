@@ -1,3 +1,5 @@
+@import url(global.css);
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: var(--color-background-neutral); /* Fundo neutro */
+    background-color: var(--color-background-neutral); 
 }
 .container {
     text-align: center;
@@ -23,6 +25,12 @@ h1 {
 p {
     color: var( --color-font-primary);
     font-size: 1.1em;
+}
+
+.saudacao {
+    font-size: 1.5em;
+    color: var(--color-background);
+    margin-top: 10px;
 }
 
 button {
