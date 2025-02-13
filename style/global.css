@@ -8,4 +8,6 @@
     --color-border-primary:  #CBBBA7;
     --color-border-sec: #8B7D70;
     --color-box-shadow: rgba(96, 4, 26, 0.3);
+    --color-mensage-text-sucess: #28A745;
+    --color-mensage-text-error: #A34743;
 }
