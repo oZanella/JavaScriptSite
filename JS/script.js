@@ -1,32 +1,37 @@
 //função para criar nova tarefa
-function addTask() {
-    
-    let tarefas = []
+let tasks = []
 
-    //let por conta de reatribuir valores
+function addTask() {
+
     const textTask = document.getElementById("inputTask")
-    //pega o valor de texto inserido no input e defini em task, trim() não permite inserir espaços no inicio e fim do text
     let task = textTask.value.trim()
-    //const definida por conta de não alterar valor
+
     const messageAlert = document.getElementById("message")
 
     //if = SE e else = SE NAO 
     if (task == "") {
-        //mensagem de erro
         let messageError = "Digite uma tarefa para adiciona-lá na lista!"
         messageAlert.textContent = messageError;
     } else {
-        //mensagem de sucesso
         let messageSucess = "Tarefa adicionada com sucesso!";
         messageAlert.textContent = messageSucess;
-        //cria um item (li) e inserir na (lista ul)
-        const listTask = document.getElementById("listTask")
+
+        tasks.push(task)
+        rendertask()
+    }
+    textTask.value = ""
+}
+
+function rendertask() {
+    const listTask = document.getElementById("listTask")
+    listTask .innerHTML = ""
+
+    //i = indice
+    let i = 0
+    for (i; i < tasks.length; i++){
         let newTask = document.createElement("li")
-        newTask.textContent = task
+        newTask.textContent = tasks[i]
         listTask.appendChild(newTask)
     }
-
-    //limpa o input do user 
-    textTask.value = ""
 
 }
