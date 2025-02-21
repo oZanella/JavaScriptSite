@@ -79,3 +79,40 @@ input[type="text"]:focus {
     border-color: var(--color-background);
     box-shadow: inset 0 2px 4px var(--color-box-shadow);
 }
+
+button.remove{
+    /* ----------------------- */
+    font-size: 0.6em;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.remove:hover{
+    background-color: var(--color-background);
+}
+
+button.edit{
+    background-color: var(--color-background-neutral);
+    color: var(--color-font-button);
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .6em;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+button.editar:hover{
+    background-color: var(--color-button-edit);
+}
+
+.button_list {
+    background-color: var(--color-background-hover);
+}
+
+.button_list:hover{
+    background-color: var(--color-background);
+    color: var(--color-font-button)
+}
