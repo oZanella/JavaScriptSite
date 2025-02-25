@@ -24,25 +24,29 @@ function addTask() {
 
 function rendertask() {
     const listTask = document.getElementById("listTask")
-    listTask .innerHTML = ""
+    listTask.innerHTML = ""
 
     //i = indice
-    
-    for (let i = 0; i < tasks.length; i++){
+
+    for (let i = 0; i < tasks.length; i++) {
         let newTask = document.createElement("li")
         newTask.textContent = tasks[i]
-        
+
         let buttonRemove = document.createElement("button")
         buttonRemove.className = "remove"
         buttonRemove.textContent = "Remover"
         buttonRemove.onclick = () => removeTask(i)           //mesma função da estrutura de function
-        
+
         newTask.appendChild(buttonRemove)
         listTask.appendChild(newTask)
     }
 }
 
-function removeTask (i) {
+function removeTask(i) {
     tasks.splice(i, 1)
     rendertask()
+
+    //-------mensagem que altera o aviso em messageAlert embaixo do button de addTask para mudar em casa situação--------------//
+    const messageAlert = document.getElementById("message");
+    messageAlert.textContent = "Item removido com sucesso!";
 }
